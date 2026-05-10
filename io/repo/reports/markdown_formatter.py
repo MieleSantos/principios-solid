@@ -1,9 +1,8 @@
-from repo.reports.base_generator import ReportGenerator
+from repo.reports.formatter import Formatter
 
 
-class MarkdownGenerator(ReportGenerator):
-    @classmethod
-    def build(cls, repos):
+class MarkdownFormatter(Formatter):
+    def format(self, repos):
         items = " ".join(
             f"**ID:**{repo.id} **NAME:** {repo.name} **stars:** {repo.stars} \n "
             for repo in repos

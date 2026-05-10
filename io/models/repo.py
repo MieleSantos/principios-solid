@@ -1,6 +1,3 @@
-# Responsabilidade de modelar o dado do repo
-
-
 class Repo:
     def __init__(self, id, name, stars):
         self._id = id

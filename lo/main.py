@@ -4,6 +4,7 @@ from repo.reports_generator import ReportsGenerator
 from repo.reports.html_generator import HTMLGenerator
 from repo.reports.markdown_generator import MarkdownGenerator
 
+
 if __name__ == "__main__":
     username = "Mielesantos"
     response = GithubClient.get_repos_by_user(username)
